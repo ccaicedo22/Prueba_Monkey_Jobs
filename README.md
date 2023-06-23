@@ -58,7 +58,7 @@ El controlador es la capa que maneja las solicitudes y coordina la interacción 
 * GitHub
 
 ## ¿DESEAS PROBAR LA API EN POSTMAN?
-Adjunto la coleccion de postman con la que realice pruebas que se encuentra en un drive para que puedan descargarla e importarla. 
+Adjunto la coleccion de postman con la que realice pruebas que se encuentra en un drive para que puedan descargarla e importarla donde la variable ({{DOMAIN}}/ es igual a tener http://127.0.0.1:8000/api ). 
 https://drive.google.com/file/d/1YhIh9vzQfShB87k9I-nmKzKZctYcJFK7/view?usp=sharing
 
 ## SOBRE MÍ
