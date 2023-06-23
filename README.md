@@ -1,66 +1,62 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# MONKEY JOBS - API 
+## Carlos Andres Balaguera Caicedo -  MONKEY JOBS
 
-## About Laravel
+## Prueba realizada del 23/06/2023 al 24/06/2023
+Bienvenido. Esta es la prueba técnica para validar mis conocimientos y fortalezas en el mundo del Backend utilizando laravel, demostrando así mi capacidad de arquitectura de codigo, patrones de diseño, clean code,  REST y demás para el mundo de  MONKEY JOBS.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Contenido
+* Modelo relacional de mi base de datos.
+* Patron de diseño.
+* Herramientas de desarrollo utilizadas.
+* ¿Deseas probas la api en POSTMAN?
+* Un poco sobre mí 😀
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## MODELO RELACIONAL DE MI BASE DE DATOS
+Para la base de datos llamada apicrud tomé como referencia 2 tablas: una de datos llamada users donde se almacena todos los datos de los usuarios y otra llamada type_documents donde se almacenan los tipos de documentos que hay, en este caso se crearon 4 tipos , donde estas tablas poseen una relación de uno a uno .
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![Image text](https://github.com/ccaicedo22/code_test_fortesza/blob/solid_application/public/images/tablas.png)
 
-## Learning Laravel
+## Instalación:
+1.Crear una base de datos mysql con el nombre "apicrud"
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+2.Clonar o descargar el proyecto en el directorio de tu servidor web
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+3.Acceder mediante terminal a la carpeta del proyecto
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+4.Ejecutar:  Composer install
 
-## Laravel Sponsors
+5.Crear el archivo .env con los comandos:  cp .env.example .env
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+6.Generar la API key ejecutando:  php artisan key:generate 
 
-### Premium Partners
+7.En el archivo .env colocar el nombre de la base de datos que se va a utilizar en este caso "apicrud"
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+8.Para ejecutar las migraciones: php artisan migrate --seed
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## PATRON DE DISEÑO
+se utiliza el patrón MVC en Laravel:
+1.Modelo (Model):
+El modelo representa la capa de datos de la aplicación. En Laravel, los modelos se encuentran en el directorio "app/Models" y se utilizan para interactuar con la base de datos. 
+2.Vista (View):
+La vista es la capa de presentación de la aplicación. En Laravel, las vistas se encuentran en el directorio "resources/views" y contienen el código HTML que se envía al navegador del usuario.
+3.Controlador (Controller):
+El controlador es la capa que maneja las solicitudes y coordina la interacción entre el modelo y la vista. En Laravel, los controladores se encuentran en el directorio "app/Http/Controllers" y son responsables de recibir las solicitudes HTTP, procesar los datos necesarios y devolver una respuesta.
 
-## Code of Conduct
+## HERRAMIENTAS DE DESARROLLO UTILIZADAS
+* Laravel Framework v - 10.13.5
+* PHP 8.2.4 
+* visual studio code
+* postman
+* xampp
+* MySQL workbench
+* Git
+* GitHub
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## ¿DESEAS PROBAR LA API EN POSTMAN?
+Adjunto la coleccion de postman con la que realice pruebas que se encuentra en un drive para que puedan descargarla e importarla. 
+https://drive.google.com/file/d/1YhIh9vzQfShB87k9I-nmKzKZctYcJFK7/view?usp=sharing
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## SOBRE MÍ
+Espero con ansias ser parte de MONKEY JOBS, aportar mis conocimientos y aptitudes, como también tener la posibilidad de ser un pilar en el engranaje encargado del crecimiento de la empresa. Quiero fortalecerme como profesional y siento que MONKEY JOBS es la oportunidad que necesito. Muchas gracias 😀
